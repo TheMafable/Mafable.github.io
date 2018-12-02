@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Site</title>
+	<link rel="stylesheet" type="text/css" href="./project/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+	<div 	id="page-preloader" class="preloader">
+			<div class="loader"></div>
+			<div class="percent"><span id="perc">0%</span></div>
+		</div>
+	<div class="header clearfix" id="head">
+		<div class="left">
+			<img src="img/logo.png">
+		</div>
+		<div class="right">
+			<div class="titles">
+				<a href="#">home</a>
+				<a href="#">about</a>
+				<a href="#">portfolio</a>
+				<a href="#">blog</a>
+				<a href="#">contact</a>
+				<a href="https://google.com" target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a>
+				<div class="hr"></div>
+			</div>
+		</div>
+		<hr class="qq">
+		<a href="#head"><img src="img/up.png" class="up"></a>
+	</div>
+	<div class="slider clearfix">
+		<ul id="slides">
+	   <li class="slide showing"></li>
+	   <li class="slide"></li>
+	   <li class="slide"></li>
+	   <a class="controls" id="previous"><img src="img/previous.png" alt=""></a>
+			<a class="controls" id="next"><img src="img/next.png" alt=""></a>
+			<div class="container">
+			<a id="dots1" class="dots"></a>
+			<a id="dots2" class="dots"></a>
+			<a id="dots3" class="dots"></a>
+			</ul>
+		</div>
+	</div>
+	<div class="photos clearfix">
+		<div class="photo1">
+			<a href="./img/layer4.png"  target="_blank"><img src="./img/hover.png" alt=""></a>
+		</div>
+		<div class="photo2">
+			<a href="./img/layer5.png"  target="_blank"><img src="./img/hover.png" alt=""></a>
+		</div>
+		<div class="photo3">
+			<a href="./img/01-2zleu1ve3uwlqd43rony0w.png"  target="_blank"><img src="./img/hover.png" alt=""></a>
+		</div>
+	</div>
+	<div class="socials">
+		<div class="facebook">
+			<a href="http://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+		</div>
+		<div class="twitter">
+			<a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+		</div>
+		<div class="instagram">
+			<a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="preloader.js"></script>
+<script type="text/javascript">
+
+		var slides = document.querySelectorAll('#slides .slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide,8000);
+		var playing = true;
+
+
+		function nextSlide() {
+		    goToSlide(currentSlide+1);
+		}
+		
+		function previousSlide() {
+		    goToSlide(currentSlide-1);
+		}
+
+		 
+		function goToSlide(n) {
+		    slides[currentSlide].className = 'slide';
+		    currentSlide = (n+slides.length)%slides.length;
+		    slides[currentSlide].className = 'slide showing';
+		}
+
+
+		var next = document.getElementById('next');
+		var dots = document.getElementById('dots');
+		var previous = document.getElementById('previous');
+
+		 
+		next.onclick = function() {
+		    nextSlide();
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide,8000);
+		};
+		previous.onclick = function() {
+		    previousSlide();
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide,8000);
+		};
+		dots1.onclick = function() {
+			goToSlide(0);
+			clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide,8000);
+		};
+		dots2.onclick = function() {
+			goToSlide(1);
+			clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide,8000);
+		};
+		dots3.onclick = function() {
+			goToSlide(2);
+			clearInterval(slideInterval);
+    slideInterval = setInterval(nextSlide,8000);
+		};
+		function change(){
+			dots[currentSlide(0)].className += " active";
+		}
+</script>
+</body>
+</html>
