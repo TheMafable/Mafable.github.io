@@ -81,10 +81,10 @@ body {
   color: #fff; }
 
 .slide:nth-of-type(1) {
-  background: url(../img/slider1.png) no-repeat center top/cover; }
+  background: url(slider1.png) no-repeat center top/cover; }
 
 .slide:nth-of-type(2) {
-  background: url(../img/slider2.png) no-repeat center top/cover; }
+  background: url(slider2.png) no-repeat center top/cover; }
 
 .slide:nth-of-type(3) {
   background: orange; }
@@ -128,7 +128,7 @@ body {
   background-color: #000000; }
 
 .photo1 {
-  background: url(../img/layer4.png) no-repeat center top/cover;
+  background: url(layer4.png) no-repeat center top/cover;
   width: 360px;
   height: 250px;
   margin-bottom: 50px;
@@ -170,7 +170,7 @@ body {
   cursor: pointer; }
 
 .photo2 {
-  background: url(../img/layer5.png) no-repeat center top/cover;
+  background: url(layer5.png) no-repeat center top/cover;
   width: 360px;
   height: 350px;
   float: left;
@@ -196,7 +196,7 @@ body {
   cursor: pointer; }
 
 .photo3 {
-  background: url(../img/01-2zleu1ve3uwlqd43rony0w.png) no-repeat center top/cover;
+  background: url(01-2zleu1ve3uwlqd43rony0w.png) no-repeat center top/cover;
   width: 360px;
   height: 450px;
   float: right;
