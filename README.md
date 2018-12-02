@@ -1,2 +1,0 @@
-# Mafable.github.io
-Hosting
