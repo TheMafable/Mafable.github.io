@@ -345,7 +345,7 @@ nav {
   height: 2px;
   background: orange; }
 
-@media (max-width: 950px) {
+@media (max-width: 1177px) {
   .hamburger {
     display: block;
     z-index: 10000; }
