@@ -1,9 +1,26 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @TheMafable Sign out
+0
+0 0 TheMafable/mafable.github.io
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+mafable.github.io/index.html
+5fd90e4  3 minutes ago
+@TheMafable TheMafable Add files via upload
+     
+145 lines (135 sloc)  4.32 KB
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Site</title>
-	<link rel="stylesheet" type="text/css" href="./project/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
@@ -23,7 +40,7 @@
 </nav>
 	<div class="header clearfix" id="head">
 		<div class="left">
-			<img src="img/logo.png">
+			<img src="logo.png">
 		</div>
 		<div class="right">
 			<div class="titles">
@@ -38,14 +55,14 @@
 		</div>
 		<hr class="qq">
 	</div>
-	<a href="#head"><img src="img/up.png" class="up"></a>
+	<a href="#head"><img src="up.png" class="up"></a>
 	<div class="slider clearfix">
 		<ul id="slides">
 	   <li class="slide showing"></li>
 	   <li class="slide"></li>
 	   <li class="slide"></li>
-	   <a class="controls" id="previous"><img src="img/previous.png" alt=""></a>
-			<a class="controls" id="next"><img src="img/next.png" alt=""></a>
+	   <a class="controls" id="previous"><img src="previous.png" alt=""></a>
+			<a class="controls" id="next"><img src="next.png" alt=""></a>
 			<div class="container">
 			<a id="dots1" class="dots"></a>
 			<a id="dots2" class="dots"></a>
@@ -55,13 +72,13 @@
 	</div>
 	<div class="photos clearfix">
 		<div class="photo1">
-			<a href="./img/layer4.png"  target="_blank"><img src="./img/hover.png" alt=""></a>
+			<a href="layer4.png"  target="_blank"><img src="hover.png" alt=""></a>
 		</div>
 		<div class="photo2">
-			<a href="./img/layer5.png"  target="_blank"><img src="./img/hover.png" alt=""></a>
+			<a href="layer5.png"  target="_blank"><img src="hover.png" alt=""></a>
 		</div>
 		<div class="photo3">
-			<a href="./img/01-2zleu1ve3uwlqd43rony0w.png"  target="_blank"><img src="./img/hover.png" alt=""></a>
+			<a href="01-2zleu1ve3uwlqd43rony0w.png"  target="_blank"><img src="hover.png" alt=""></a>
 		</div>
 	</div>
 	<div class="socials">
@@ -79,13 +96,10 @@
 	<script src="script.js"></script>
 	<script src="preloader.js"></script>
 <script type="text/javascript">
-
 		var slides = document.querySelectorAll('#slides .slide');
 		var currentSlide = 0;
 		var slideInterval = setInterval(nextSlide,8000);
 		var playing = true;
-
-
 		function nextSlide() {
 		    goToSlide(currentSlide+1);
 		}
@@ -93,19 +107,15 @@
 		function previousSlide() {
 		    goToSlide(currentSlide-1);
 		}
-
 		 
 		function goToSlide(n) {
 		    slides[currentSlide].className = 'slide';
 		    currentSlide = (n+slides.length)%slides.length;
 		    slides[currentSlide].className = 'slide showing';
 		}
-
-
 		var next = document.getElementById('next');
 		var dots = document.getElementById('dots');
 		var previous = document.getElementById('previous');
-
 		 
 		next.onclick = function() {
 		    nextSlide();
