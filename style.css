@@ -302,7 +302,8 @@ nav {
   background: #444;
   overflow: hidden;
   z-index: 10000;
-  position: fixed; }
+  position: fixed;
+  opacity: 0; }
 
 .menu ul {
   margin: 0;
@@ -369,4 +370,6 @@ nav {
   position: fixed;
   overflow: visible;
   width: 100%;
+  opacity: 1;
+    top: 0;
 } }
