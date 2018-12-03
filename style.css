@@ -301,7 +301,8 @@ body {
 nav {
   background: #444;
   overflow: hidden;
-  z-index: 10000; }
+  z-index: 10000;
+  position: fixed; }
 
 .menu ul {
   margin: 0;
@@ -363,4 +364,9 @@ nav {
     float: none;
     width: 90%; }
   .header {
-    display: none; } }
+    display: none; }
+    .menu{
+  position: fixed;
+  overflow: visible;
+  width: 100%;
+} }
