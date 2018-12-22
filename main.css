@@ -1,8 +1,11 @@
 body{
   text-align: center;
-  background: url(13844148700.jpg) no-repeat top / cover;
+  background: url(13844148700.jpg) no-repeat center top / cover;
   font-family: sans-serif;
   font-weight: 100;
+}
+.content{
+  padding-bottom: 50px;
 }
 .text{
   text-align: center;
@@ -14,7 +17,7 @@ h1{
   background: #D50C05;
   width: 201px;
   padding: 15px;
-  margin: 50px 50%;
+  margin: 50px 50% 10px;
   border-radius: 3px;
   transform: translate(-50%);
 }
@@ -29,6 +32,7 @@ h1{
 }
  
 #clockdiv > div{
+  margin-top: 10px;
   padding: 10px;
   border-radius: 3px;
   background: #D34E4A;
