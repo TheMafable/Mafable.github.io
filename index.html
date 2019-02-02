@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="logo col-lg-2">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="menu d-flex col-lg-7 offset-lg-1">
+						<a href="#">
+							<div class="begin d-flex active-header">
+								<i class="fas fa-angle-right"></i><h6>Начало</h6>
+							</div>
+						</a>
+						<a href="#">
+							<div class="begin d-flex">
+								<i class="fas fa-angle-right"></i><h6>Выбрaть пиццу</h6>
+							</div>
+						</a>
+						<a href="#">
+							<div class="begin d-flex">
+								<i class="fas fa-angle-right"></i><h6>Выбрать закуску</h6>
+							</div>
+						</a>
+						<a href="#">
+							<div class="begin d-flex">
+								<i class="fas fa-angle-right"></i><h6>Выбрать напитки</h6>
+							</div>
+						</a>
+					</div>
+					<div class="phone-number col-lg-2">
+						<p>Заказать по телефону:</p>
+						<div class="ph-n d-flex">
+							<i class="fas fa-phone"></i><p class="frst">+7 (495) </p><p class="scnd">923-35-74</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-slider">
+			<div class="container">
+				<div class="row">
+					<div class="nav">
+						<div class="prev">
+							<i class="fas fa-angle-left"></i>
+						</div>
+						<div class="next">
+							<i class="fas fa-chevron-circle-right"></i>
+						</div>
+					</div>
+					<div class="owl-carousel">
+						<div class="d-flex">
+							<div class="text col-lg-4">
+								<h1>Пицца Неаполитана</h1>
+								<p>Великолепная, пикантная, горячая итальянская пицца с аппетитным французским сыром.</p>
+							</div>
+							<img class="col-lg-6" src="img/neapolitana.png" alt="">
+
+						</div>
+						<div> Your Content </div>
+						<div> Your Content </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		var owl = $(".owl-carousel");
+	owl.owlCarousel({
+		 loop: true,
+		 items: 1,
+		 nav: true,
+		 navText: ""
+	});
+	$(".next").click(function(){
+		owl.trigger('next.owl.carousel');
+	})
+	$(".prev").click(function(){
+		owl.trigger('prev.owl.carousel');
+	});
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="header-top">
+			<div class="container">
+				<div class="row">
+					<div class="logo col-lg-2">
+						<a href="#">
+							<img src="img/logo.png" alt="">
+						</a>
+					</div>
+					<div class="menu d-flex col-lg-7 offset-lg-1">
+						<a href="#">
+							<div class="begin d-flex active-header">
+								<i class="fas fa-angle-right"></i><h6>Начало</h6>
+							</div>
+						</a>
+						<a href="#">
+							<div class="begin d-flex">
+								<i class="fas fa-angle-right"></i><h6>Выбрaть пиццу</h6>
+							</div>
+						</a>
+						<a href="#">
+							<div class="begin d-flex">
+								<i class="fas fa-angle-right"></i><h6>Выбрать закуску</h6>
+							</div>
+						</a>
+						<a href="#">
+							<div class="begin d-flex">
+								<i class="fas fa-angle-right"></i><h6>Выбрать напитки</h6>
+							</div>
+						</a>
+					</div>
+					<div class="phone-number col-lg-2">
+						<p>Заказать по телефону:</p>
+						<div class="ph-n d-flex">
+							<i class="fas fa-phone"></i><p class="frst">+7 (495) </p><p class="scnd">923-35-74</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-slider">
+			<div class="container">
+				<div class="row">
+					<div class="nav">
+						<div class="prev">
+							<i class="fas fa-angle-left"></i>
+						</div>
+						<div class="next">
+							<i class="fas fa-chevron-circle-right"></i>
+						</div>
+					</div>
+					<div class="owl-carousel">
+						<div class="d-flex">
+							<div class="text col-lg-4">
+								<h1>Пицца Неаполитана</h1>
+								<p>Великолепная, пикантная, горячая итальянская пицца с аппетитным французским сыром.</p>
+							</div>
+							<img class="col-lg-8" src="img/neapolitana.png" alt="">
+
+						</div>
+						<div> Your Content </div>
+						<div> Your Content </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		var owl = $(".owl-carousel");
+	owl.owlCarousel({
+		 loop: true,
+		 items: 1,
+	});
+ $(".next").click(function(){
+		owl.trigger('next.owl.carousel');
+	})
+	$(".prev").click(function(){
+ 	owl.trigger('prev.owl.carousel');
+	});
+</script>
+</body>
+</html>

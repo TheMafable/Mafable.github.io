@@ -1,0 +1,110 @@
+@import "fonts.sass";
+img{
+	max-width: 100%;
+}
+header{
+	background: url(../img/overlay.png) no-repeat center top / cover;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+a:hover{
+	text-decoration: none;
+	color: #fff;
+	opacity: 0.8;
+}
+.header-top{
+ font-family: RalewayBold;
+ color:#fff;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ background: rgba(0, 0, 0, 0.3);
+ font-size: 12px;
+}
+.begin{
+	padding-top: 15px;
+	margin-right: 47px;
+}
+
+.begin h6{
+	padding-left: 13px;
+	text-decoration: underline;
+	text-decoration-color: #8e8a87;
+	font-size: 12px;
+}
+.begin i {
+	padding-top: 2px;
+ 	color: #67635e;
+}
+.active-header{
+	padding-top: 10px;
+}
+.active-header h6{
+	padding-top: 6px;
+	color: #c59d5f;
+	text-decoration: none;
+}
+.active-header i{
+	max-height: 65%;
+	color: #000000;
+	background: #94774a;
+	border-radius: 50%;
+	padding: 8px 11px 0px 11px;
+}
+.phone-number{
+	font-family: Arial;
+	text-align: center;
+}
+.phone-number p{
+	color:#848383;
+	margin-bottom: 0;
+}
+.ph-n i{
+ color: #c59d5f;
+ transform: rotate(90deg);
+ padding-top:20px;
+}
+.ph-n p{
+	font-size: 14px;
+	color:#fff;
+}
+.frst{
+ padding-top: 3px;
+ padding-right: 5px;
+}
+.scnd{
+	font-size: 18px !important;
+}
+.header-slider{
+	text-align: left;
+ color: #fff;
+}
+.text{
+	padding-top: 180px;
+}
+.text h1{
+	font-family: IsadoraBold;
+}
+.text p{
+	width: 262px;
+}
+.header-slider img{
+	padding-top: 90px;
+ height: 10%;
+}
+.prev, .next i{
+	font-size: 40px;
+	position: absolute;
+  top: 34%;
+}
+.prev{
+ left: 16%;
+}
+.next i{
+ position: absolute;
+ right: 20%;
+}
+.owl-carousel{
+ max-width: 94%;
+}
